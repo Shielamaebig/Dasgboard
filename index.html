@@ -5,61 +5,99 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
+    <link href="assets/fontawesome/css/all.css">
+    <link href="assets/style.css" rel="stylesheet">
     <link href="assets/vendor/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <!-- Nav-Bar -->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">My Site</a>
-            <!-- Hamburger Menu -->
-            <div jus>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Services</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Contact</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-    </header>
+<header>
+    <div class="container-fluid">
 
-    <!-- <aside id="sidebar" class="sidebar">
-        <ul class="nav flex-column side-nav" id="side-nav">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Dashboard</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Orders</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Products</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Customers</a>
-            </li>
-          </ul>
-    </aside> -->
-        <!-- <main id="mian" class="main">
-            <h1>Welcome to My Site</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at ante id mi luctus bibendum. Quisque iaculis feugiat sapien, ut maximus nunc euismod vel. Fusce aliquet massa enim, sit amet sagittis ex dapibus ac. Donec commodo, ipsum ut eleifend bibendum, erat mauris feugiat est, ut venenatis ex mauris vel nunc. Nam vel finibus nunc. Donec eu purus sapien. Sed consectetur eros nec tristique bibendum. Pellentesque eget nibh at tellus efficitur molestie. Sed venenatis massa elit, eu faucibus ex vulputate eu.</p>
-            <p>Phasellus vel sollicitudin velit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam tincidunt, quam eget lacinia blandit, nunc ipsum tincidunt orci, in eleifend lacus velit vel dolor. Morbi ac lacus sapien. Integer vel faucibus nisl, eu posuere neque.</p>            
-          </main> -->
-    <!-- main Js -->
+      <div class="navb-logo">
+          <img src="/assets/image/logo-variant.png" alt="Logo">
+      </div>
+
+      <div class="navb-items d-none d-xl-flex">
+
+          <div class="item">
+              <a href="/">Home</a>
+          </div>
+
+          <div class="item">
+              <a href="/services">Services</a>
+          </div>
+
+          <div class="item">
+              <a href="/cases">Cases</a>
+          </div>
+
+          <div class="item">
+              <a href="/about">About</a>
+          </div>
+
+          <div class="item-button">
+              <a href="/contact" type="button">Let's talk</a>
+          </div>
+      </div>
+
+      <!-- Button trigger modal -->
+      <div class="mobile-toggler d-lg-none">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#navbModal">
+              <i class="fa-solid fa-bars"></i>
+          </a>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="navbModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+          aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+
+                  <div class="modal-header">
+                      <img src="/assets/image/logo-variant.png" alt="Logo">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+                  </div>
+
+                  <div class="modal-body">
+                      
+                      <div class="modal-line">
+                          <i class="fa-solid fa-house"></i><a href="/">Home</a>
+                      </div>
+
+                      <div class="modal-line">
+                          <i class="fa-solid fa-bell-concierge"></i><a href="/services">Services</a>
+                      </div>
+
+                      <div class="modal-line">
+                          <i class="fa-solid fa-file-lines"></i> <a href="/cases">Cases</a>
+                      </div>
+
+                      <div class="modal-line">
+                          <i class="fa-solid fa-circle-info"></i><a href="/about">About</a>
+                      </div>
+
+                      <a href="/contact" class="navb-button" type="button">Let's talk</a>
+                  </div>
+
+                  <div class="mobile-modal-footer">
+                      
+                      <a target="_blank" href="#"><i class="fa-brands fa-instagram"></i></a>
+                      <a target="_blank" href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                      <a target="_blank" href="#"><i class="fa-brands fa-youtube"></i></a>
+                      <a target="_blank" href="#"><i class="fa-brands fa-facebook"></i></a>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</header>
+
+<section class="section-1">
+
+  <p>time, diamonds and others relics</p>
+</section>
+
     <script src="assets/scripts.js"></script>
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
 </body>
