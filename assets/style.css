@@ -1,0 +1,12 @@
+.navbar {
+    background-color: #333;
+    color: #fff;
+  }
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .navbar-nav > li > a {
+    color: #fff;
+  }
+  /* Sidebar styles */
